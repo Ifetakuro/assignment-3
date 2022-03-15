@@ -8,8 +8,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,
 body {
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -357,8 +357,15 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
   .hero-section {
-    margin: 30% auto;
+    margin: 20% auto;
   }
 
   .logo {
@@ -453,6 +460,9 @@ span {
 }
 
 @media screen and (max-width: 560px) {
+  .hero-section {
+    margin: 30% auto;
+  }
   .logo {
     width: 100px;
   }
